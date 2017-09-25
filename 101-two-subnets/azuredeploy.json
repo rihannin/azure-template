@@ -43,7 +43,13 @@
       "metadata": {
         "description": "Subnet 2 Name"
       }
-    }    
+    },
+    "existingVnetResourceGroupName": {
+      "type": "string",
+      "metadata": {
+        "description": "Subnet Name"
+      }
+    }
   },
   "resources": [
     {
