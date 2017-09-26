@@ -1,7 +1,4 @@
 {
-  "location": {
-    "value": "West US"
-  },
   "vnetName": {
       "value": "VNet 1"
   },
@@ -19,5 +16,8 @@
   },
   "subnet2Prefix": {
       "value": "10.0.1.0/24"
+  },
+  "existingVnetResourceGroupName": {
+      "value": ""
   }
 }
