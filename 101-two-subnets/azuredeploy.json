@@ -79,7 +79,7 @@
         ]
       }
     }
-  ]
+  ],
   "outputs": {
     "subnet1Ref": {
       "value": "[concat(resourceId('Microsoft.Network/virtualNetworks/', parameters('vnetName')), '/subnets/',parameters('subnet1Name'))]",
