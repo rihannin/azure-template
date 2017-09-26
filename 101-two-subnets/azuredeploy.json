@@ -49,7 +49,23 @@
       "metadata": {
         "description": "Subnet Name"
       }
+    },
+	"routeTable1Name": {
+      "type": "string",
+	  "metadata": {
+        "description": "Route to Internet from WAN Interface"
+	  }
+    },
+    "routeTable2Name": {
+      "type": "string",
+	  "metadata": {
+        "description": "Route to LAN Interface"
+	  }
     }
+  },
+  "variables": {
+    "routeTable1ID": "[resourceId('Microsoft.Network/routeTables',parameters('routeTable1Name'))]",
+	"routeTable2Id": "[resourceId('Microsoft.Network/routeTables',parameters('routeTable2Name'))]"
   },
   "resources": [
     {
