@@ -83,13 +83,19 @@
           {
             "name": "[parameters('subnet1Name')]",
             "properties": {
-              "addressPrefix": "[parameters('subnet1Prefix')]"
+              "addressPrefix": "[parameters('subnet1Prefix')]",
+			  "routeTable": {
+			    "id": "[variables('routeTable1ID')]"
+			  }
             }
           },
           {
             "name": "[parameters('subnet2Name')]",
             "properties": {
-              "addressPrefix": "[parameters('subnet2Prefix')]"
+              "addressPrefix": "[parameters('subnet2Prefix')]",
+			  "routeTable": {
+			    "id": "[variables('routeTable2ID')]"
+			  }
             }
           }
         ]
