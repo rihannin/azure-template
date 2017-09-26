@@ -85,6 +85,10 @@
       "value": "[concat(resourceId('Microsoft.Network/virtualNetworks/', parameters('vnetName')), '/subnets/',parameters('subnet1Name'))]",
       "type": "string"
     },
+    "subnet2Ref": {
+      "value": "[concat(resourceId('Microsoft.Network/virtualNetworks/', parameters('vnetName')), '/subnets/',parameters('subnet2Name'))]",
+      "type": "string"
+    },
     "virtualNetworkID": {
       "value": "",
       "type": "string"
